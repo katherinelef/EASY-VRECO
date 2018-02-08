@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: #F7F6E7;
+  background-color: #f7f6e7;
 }
 
 #map {
-  height: 60vh;
-  margin-top: 20px;
+  height: 40vh;
+  margin-top: 2em;
 }
 
 footer{
@@ -19,4 +19,14 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+@media screen and (min-width:768px){
+
+  #map {
+    height: 60vh;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
