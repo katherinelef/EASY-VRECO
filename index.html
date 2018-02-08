@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Geolocalizacion</title>
-  <style>
-    #map {
-      margin: 20px;
-    }
-  </style>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Geolocalizacion</title>
 
+</head>
 <body>
 
   <form class="form-inline">
   <div class="form-group">
-    <label class="sr-only" for="exampleInputEmail3">Origen</label>
-    <input type="text" class="form-control" id="origen" placeholder="Origen">
+    <label for="exampleInputName2">Origen</label>
+    <input class="form-control" type="text" name="" value="" placeholder="Partida" id="inputPartida">
   </div>
   <div class="form-group">
-    <label class="sr-only" for="exampleInputPassword3">Destino</label>
-    <input type="text" class="form-control" id="destino" placeholder="Destino">
+    <label for="exampleInputEmail2">Destino</label>
+    <input class="form-control" type="text" name="" value="" placeholder="Destino" id="inputDestino">
   </div>
-  <button type="button" class="btn btn-warning" id="button">Ruta</button>
+<button class="btn btn-warning" type="button" name="button" id="trazar-ruta">Trazar ruta</button>
 </form>
 
-  <div id="map"></div>
+    <div class="col-xs-12 col-sm-6 col-md-8" id="map"></div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnyUiI1ec-pwA8TvvjO9jQ1jwZEozA5Q0"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="app.js"></script>
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBexEnE7z4a-tSw-zMZlxqwUESVoQa3x10&callback=initMap&libraries=places">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
-
 </html>
