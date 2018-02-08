@@ -16,14 +16,12 @@ function findMe() {
         var longitude = posicion.coords.longitude;
         var inputOrigin = document.getElementById('origen').value;
         var inputDestination = document.getElementById('destino').value;
-        var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center=" +"&markers=color:blue%7C"+ inputOrigin + "&size=600x300&zomm=15&markers=color:red%7C" + inputDestination + "&path=color:0x0000ff|weight:5"+"|" +inputOrigin +"|"+inputDestination+"&key=AIzaSyB8gpj5GIvkwWqohsw6cyQPm37uLEcnTEk";
+        var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center=" +"&markers=color:blue%7C"+ inputOrigin + "&size=600x300&zoom=10&markers=color:red%7C" + inputDestination + "&path=color:0x0000ff|weight:5"+"|" +inputOrigin +"|"+inputDestination+"&key=AIzaSyB8gpj5GIvkwWqohsw6cyQPm37uLEcnTEk";
         output.innerHTML = "<img src='" + imgURL + "'>";
 
+        console.log(latitude)
+
       }
-
-
-
-
       function error() {
         output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
       }

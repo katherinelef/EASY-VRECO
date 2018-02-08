@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Geolocalizacion</title>
   <style>
     #map {
@@ -12,11 +14,24 @@
 </head>
 
 <body>
-  <button id="button">Mostrar ubicación</button>
+
+  <form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Origen</label>
+    <input type="text" class="form-control" id="origen" placeholder="Origen">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Destino</label>
+    <input type="text" class="form-control" id="destino" placeholder="Destino">
+  </div>
+  <button type="button" class="btn btn-warning" id="button">Ruta</button>
+</form>
+
   <div id="map"></div>
-  <input id="origen" type="text" name="" value="" placeholder="Origen">
-  <input id="destino" type="text" name="" value="" placeholder="Destino">
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnyUiI1ec-pwA8TvvjO9jQ1jwZEozA5Q0"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="app.js"></script>
 </body>
 
