@@ -1,38 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Geolocalizacion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Geolocalización</title>
 
 </head>
+
 <body>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- menu hamburguesa -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburguer" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Geolocalización
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="hamburguer">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="https://github.com/katherinelef/EASY-VRECO">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <form class="form-inline">
-  <div class="form-group">
-    <label for="exampleInputName2">Origen</label>
-    <input class="form-control" type="text" name="" value="" placeholder="Partida" id="inputPartida">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Destino</label>
-    <input class="form-control" type="text" name="" value="" placeholder="Destino" id="inputDestino">
-  </div>
-<button class="btn btn-warning" type="button" name="button" id="trazar-ruta">Trazar ruta</button>
-</form>
+  <!-- section-form -->
+  <section class="section-form text-center">
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="exampleInputName2">Origen</label>
+        <input class="form-control" type="text" name="" value="" placeholder="Partida" id="inputPartida">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail2"> Destino</label>
+        <input class="form-control" type="text" name="" value="" placeholder="Destino" id="inputDestino">
+      </div>
+      <button class="btn btn-warning" type="button" name="button" id="trazar-ruta">Trazar ruta</button>
+    </form>
+  </section>
 
-    <div class="col-xs-12 col-sm-6 col-md-8" id="map"></div>
+  <!-- section map -->
+  <section class="section-map text-center">
+    <div class="col-xs-12 col-sm-12 col-md-12" id="map"></div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+          <hr>
+          <p>© 2018 Easy-vreco technologies Inc.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBexEnE7z4a-tSw-zMZlxqwUESVoQa3x10&callback=initMap&libraries=places">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBexEnE7z4a-tSw-zMZlxqwUESVoQa3x10&callback=initMap&libraries=places">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
+
 </html>

@@ -1,8 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 20px;
+  background-color: #F7F6E7;
 }
 
 #map {
-    height: 60vh;
-    margin-top: 20px;
+  height: 60vh;
+  margin-top: 20px;
+}
+
+footer{
+  background-color: #000000;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
